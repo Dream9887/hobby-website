@@ -1,65 +1,33 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-     <meta charset="utf-8" />
-           <meta name="viewport" content="width=device-width, init
-       <title>Eid mubarak(sampul raya)!</title>
-    <style>
-      body {
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190819/pngtree-selamat-hari-raya-aidilfitri-vector-colorful-background-image_300951.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
+ <html>
+   <head>
+    <title>Login Form</title>
+  <style>
+   body {
+    background: linear-gradient(to right, white, lightblue, lightgreen);
     font-family: sans-serif;
-      }
-      .sampul-raya {
-        width: 1000px;
-        text-align: center;
-        animation: move1 3s;
-        margin-top: 100px;
-        margin-bottom: 10px;
-        margin-right: 100px;
-        margin-left: 690px;
-        border: solid white;
-        background-color: white;
-        box-shadow: 10px 10px 10px 10px;
-      }
-      #top {
-        animation: topcolor 5s infinite alternate;
-        color: linear-gradient(to right);
-      }
-      @keyframes move1 {
-        0% { transform: translateX(10000px); opacity: 0; }
-        50% { transform: translateX(0px); }
-        100% { transform: translateX(0px); }
-      }
-      @keyframes topcolor {
-        0% { color: green; }
-        26% { color: cyan; }
-        35% { color: pink; }
-        55% { color: purple; }
-        86% { color: red; }
-        100% { color: orange; }
-      }
-      .inside {
-        margin-top: 50px;
-        font-size: larger;
-      }
-      #note {
-        font-size:smaller
-      }
-   </style>
-     <body>
-      <div class="sampul-raya">
-     <h1 id="top">Kad Ucapan Raya!</h1>
-    <p class="inside">Semalam makan kuih bangkit,<br>
-       <br>Hari ni dodol pulak mari.<br>
-         <br>Baju Raya masih pakai balik,<br>
-       <br>Mak cakap, “Selagi tak kotor, pakai lagi!” <br>
-      <br>Selamat Hari Raya semua,<br>
-    <br>Maaf Zahir dan juga Batin.<br>
-    <br>Moga Syawal bawa bahagia<br>
-    <br>Hati gembira, senyum manis terjamin!</p>
-    <p id="note">*Walaupun lambat, Raya jugak kan? wkwkwkw*<br></p>
-     </div>
-    </body>
-  </html>
+  }
+  .box-form {
+    border: solid white;
+    border-radius: 20px;
+    background-color: white;
+    width: 55%;
+    text-align: center;
+    transform: translateY(700px) translateX(215px) scale(1.8);
+    text-shadow: green;
+  }
+  </style>
+   </head>
+   <body>
+    <div class="box-form">
+      <h1 id="topic">Welcome back to IT college</h1>
+       <h2>Sign in to continue</h2>
+        <label>Email:</label>
+        <input type="text"><br>
+        <label>Password:</label>
+        <input type="password"><br>
+      <button>Sign in</button>
+      <p>Not a member yet? <a href="test.com">Call us!</a></p>
+    </div>
+   </body>
+ </html>
