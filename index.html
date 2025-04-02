@@ -10,11 +10,28 @@
   .box-form {
     border: solid white;
     border-radius: 20px;
-    background-color: white;
+    background: linear-gradient(to right, lightblue, purple);
     width: 55%;
     text-align: center;
     transform: translateY(700px) translateX(215px) scale(1.8);
     text-shadow: green;
+  }
+  #sign-in {
+    border-radius: 20px;
+    transform: translateY(10px);
+    width: 200px;
+    background: darkblue;
+    color: white;
+  }
+  .password {
+    transform: translateX(-15px);
+  }
+  input {
+    background: gray;
+    border-radius: 20px;
+  }
+  #email {
+    transform: translateX(30px)
   }
   </style>
    </head>
@@ -22,12 +39,36 @@
     <div class="box-form">
       <h1 id="topic">Welcome back to IT college</h1>
        <h2>Sign in to continue</h2>
-        <label>Email:</label>
-        <input type="text"><br>
+        <label id="email">Email:</label>
+        <input type="text" id="emailsec" onclick="email()"><br>
+      <div class="password">
         <label>Password:</label>
-        <input type="password"><br>
-      <button>Sign in</button>
+        <input type="password" id="passwordsec" onclick="password()"><br>
+         </div>
+      <button id="sign-in" onclick="signin()">Sign in</button>
       <p>Not a member yet? <a href="test.com">Call us!</a></p>
     </div>
+   <script>
+    console.log("Website succesfully loaded!");
+    console.log("You'd be mine...would you mind?");
+    function box() {
+      document.getElementById("box-form");
+      console.log("For form status: Form loaded! ");
+    }
+    box();
+    function email() {
+      document.getElementById("emailsec");
+      console.log("User is entering email...");
+    }
+    function password() {
+      document.getElementById("passwordsec");
+      console.log("User is entering password...");
+    }
+    function signin() {
+      document.getElementById("sign-in");
+      console.log("Signed in! Moving to the next page...");
+      alert("Signed in!")
+    }
+   </script>
    </body>
  </html>
